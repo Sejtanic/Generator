@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="We provide Random Number between two specific numbers.Dice that can you roll.Or if needed use our Coin Toss for 50 50 chance..All that in minimalistic Interface">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Random Number | Dice | Coin </title>
+  </head>
+  <body>
+    <p class="theme">&#128161</p>
+    <div class="container">
+      <div class="selection">
+        <div class="box randomNumGenerator"><h1>NUMBER ?</h1></div>
+        <div class="box diceGenerator"><h1>DICE ?</h1></div>
+        <div class="box coinGenerator"><h1>COIN ?</h1></div>
+      </div>
+      <div class="placement">
+        <div class="numberGenerator hidden">
+          <div class="cont">
+            <input class="from input" type="number" placeholder="FROM" />
+            <input class="to input" type="number" placeholder="TO" />
+          </div>
+          <div class="randomNumPlaceholder"></div>
+          <button class="btn btn--random--number">GENERATE</button>
+        </div>
+        <div class="diceGeneratorBox hidden">
+          <div class="diceBox"><p class="diceDisp">Press Roll</p></div>
+          <button class="btn dice--roll">ROLL</button>
+        </div>
+        <div class="coinGeneratorBox hidden">
+          <div class="diceBox"><p class="coinDisp">Press Flip</p></div>
+
+          <button class="btn coin--flip">FLIP</button>
+
+        </div>
+      </div>
+    </div>
+    <p class="copyright">&copy;2021 Haris Šejtanić</p>
+    <script src="script.js"></script>
+  </body>
+</html>
